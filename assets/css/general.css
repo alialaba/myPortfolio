@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
 
 html {
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
@@ -37,7 +39,15 @@ body {
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  --fz-xxs: 12px;
+  --border-radius: 4px;
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px; 
+    
+    --fz-xxs: 12px;
   --fz-xs: 13px;
   --fz-sm: 14px;
   --fz-md: 16px;
@@ -45,13 +55,14 @@ body {
   --fz-xl: 20px;
   --fz-xxl: 22px;
   --fz-heading: 32px;
-  --border-radius: 4px;
-  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
-
-  /* --nav-height: 100px;
-    --nav-scroll-height: 70px;
-    --tab-height: 42px;
-    --tab-width: 120px; */
+    */
+}
+h1,
+h2 {
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
 }
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */

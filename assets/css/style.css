@@ -1,0 +1,56 @@
+/*****************************/
+/*HEADER*/
+/*****************************/
+.header {
+  background-color: var(--dark-navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  padding: 0 4.8rem;
+  height: 9rem;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-mine {
+  height: 3.2rem;
+  /* width: 50px; */
+}
+.welcome {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link__cta {
+  padding: 1.1rem 2.2rem;
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 4px;
+}
+.btn-nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
