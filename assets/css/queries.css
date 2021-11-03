@@ -33,6 +33,43 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .btn-nav-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 3em;
+    height: 3em;
+    transition: opacity 250ms ease;
+    border-radius: 4px;
+  }
+  .menu-nav-toggle {
+    width: 70%;
+    position: relative;
+  }
+  .menu-nav-toggle,
+  .menu-nav-toggle::before,
+  .menu-nav-toggle::after {
+    display: block;
+    height: 2px;
+    background-color: var(--green);
+    border-radius: 4px;
+  }
+  .menu-nav-toggle::before,
+  .menu-nav-toggle::after {
+    content: "";
+    /* width: 100%; */
+  }
+  .menu-nav-toggle::before {
+    transform: translateY(-9px);
+    width: 100%;
+  }
+  .menu-nav-toggle::after {
+    transform: translateY(6px);
+    width: 70%;
+  }
+  .nav-list {
+    visibility: hidden;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
