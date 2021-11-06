@@ -73,3 +73,9 @@ a {
   margin: 0 auto;
   /* padding: ; */
 }
+.list {
+  list-style: none;
+}
+.list__link {
+  text-decoration: none;
+}

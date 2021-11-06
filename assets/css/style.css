@@ -60,6 +60,27 @@
   height: 4.8rem;
   color: var(--green);
 }
+.list__link--icon {
+  /* width: 50%; */
+}
 .icon-nav-toggle[name="close-outline"] {
   display: none;
+}
+/**********************/
+/*HERO SECTION*/
+/**********************/
+.hero-section {
+  overflow: hidden;
+  background-color: var(--dark-navy);
+  padding: 100px 0;
+}
+.hero__orientation {
+  position: relative;
+}
+.right {
+  /* position: sticky;
+  bottom: 100%;
+  margin-bottom: auto; */
+  /* position: absolute; */
+  /* margin-bottom: auto; */
 }
