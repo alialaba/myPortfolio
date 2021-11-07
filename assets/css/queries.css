@@ -68,7 +68,7 @@
     width: 70%;
   }
   .nav {
-    background-color: #0a192f;
+    background-color: var(--navy);
     /* backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); */
     position: absolute;
