@@ -4,6 +4,12 @@
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 @media (max-width: 84em) {
+  .hero {
+    padding: 0 9rem 0 9rem;
+  }
+  .hero__content--describe {
+    width: 60%;
+  }
 }
 
 /**************************/
@@ -27,12 +33,14 @@
     font-size: 50%;
   }
 }
+/**************************/
+/* BELOW 758px (Smaller tablets) */
+/**************************
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/* BELOW 758px (smaller tablets) */
 /**************************/
-
-@media (max-width: 44em) {
+@media (max-width: 47em) {
   .btn-nav-toggle {
     display: block;
     position: absolute;
@@ -106,6 +114,8 @@
   .nav-open .menu-nav-toggle {
     display: none;
   }
+  /* OVERLAY */
+
   .nav-list {
     flex-direction: column;
     align-items: center;
@@ -116,10 +126,30 @@
   .nav-link:visited {
     font-size: 2.5rem;
   }
+
+  /* HERO */
+  .hero {
+    padding: 0;
+  }
+  .hero__orientation {
+    display: none;
+  }
+  .hero__content--describe {
+    width: 80%;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
 @media (max-width: 34em) {
+  .hero__content--name {
+    font-size: 3.5rem;
+  }
+  .hero__content--subtitle {
+    font-size: 4rem;
+  }
+  .hero__content--describe {
+    width: 100%;
+  }
 }
