@@ -4,7 +4,7 @@
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 @media (max-width: 84em) {
-  .hero {
+  .padding-md {
     padding: 0 9rem 0 9rem;
   }
   .hero__content--describe {
@@ -128,7 +128,7 @@
   }
 
   /* HERO */
-  .hero {
+  .padding-sm {
     padding: 0;
   }
   .hero__orientation {
@@ -151,5 +151,10 @@
   }
   .hero__content--describe {
     width: 100%;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    grid-template-columns: 1fr;
   }
 }
