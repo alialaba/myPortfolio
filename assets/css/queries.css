@@ -137,6 +137,13 @@
   .hero__content--describe {
     width: 80%;
   }
+  /* ABOUT SECTION */
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about__img--mine {
+    text-align: center;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -151,10 +158,5 @@
   }
   .hero__content--describe {
     width: 100%;
-  }
-
-  /* ABOUT SECTION */
-  .about {
-    grid-template-columns: 1fr;
   }
 }

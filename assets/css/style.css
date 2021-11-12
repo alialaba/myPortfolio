@@ -141,8 +141,9 @@
 }
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 60fr 35fr;
+  gap: 5rem;
+  grid-row: 5rem;
   align-items: center;
 }
 .about__describe {
@@ -153,20 +154,30 @@
 
 .about__img {
   position: relative;
-  width: 70%;
-  border: 1px solid var(--green);
+  width: 90%;
 }
 .about__img--mine {
   opacity: 1;
   transition: 0.5s ease;
-  width: 100%;
+  width: 90%;
   height: auto;
   backface-visibility: hidden;
+  border-radius: 4px;
 }
-.about__img .about__img--mine {
-  /* opacity: 0.3; */
-  background-color: var(--green);
+
+.about__img::after {
+  border: 1px solid var(--green);
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  content: "";
+  top: 7%;
+  left: 10%;
+  border-radius: 4px;
+  overflow: hidden;
+  /* z-index: -1; */
 }
+
 .about__img:hover .about__img--mine {
   opacity: 0.3;
 }
