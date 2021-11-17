@@ -7,6 +7,9 @@
   .padding-md {
     padding: 0 9rem 0 9rem;
   }
+  /* .inner-padding-md {
+    padding: 0 15rem 0 15rem;
+  } */
   .hero__content--describe {
     width: 60%;
   }
@@ -145,6 +148,8 @@
   .about__img--mine {
     text-align: center;
   }
+
+  /***Work Section***/
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -159,5 +164,37 @@
   }
   .hero__content--describe {
     width: 100%;
+  }
+
+  /***Work Section***/
+  .tabs {
+    /* display: block; */
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .tab {
+    /* position: relative; */
+    border-left: 0;
+    border-bottom: 2px solid var(--slate);
+    height: 0;
+  }
+  .tab.active {
+    border-bottom: 2px solid var(--green);
+    border-left: 0;
+  }
+  .tab-contents {
+    /* position: relative; */
+  }
+
+  .tab-content {
+    width: 90%;
+    position: relative;
+    right: 80%;
+    margin: 0 auto;
+    top: 3%;
+    display: inline-block;
+    bottom: 0;
+    /* height: 100%; */
   }
 }

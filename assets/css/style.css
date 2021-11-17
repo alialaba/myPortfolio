@@ -191,8 +191,7 @@
 .tabs {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  /* border-left: 2px solid var(--slate); */
+  /* gap: 4rem; */
   width: 15%;
 }
 .tab-content {
@@ -204,15 +203,16 @@
   padding: 1.1rem;
   width: 100px;
   font-size: 1.2rem;
+  border-left: 2px solid var(--slate);
 
+  gap: 3rem;
   /* position: absolute; */
   /* top: 15%; */
   /* transition: 0.3s; */
 
   /* margin-left: 2rem; */
 }
-.active,
-.tab {
+.active.tab {
   border-left: 2px solid var(--green);
 }
 .tab:hover {
