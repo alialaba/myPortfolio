@@ -214,6 +214,7 @@
 }
 .active.tab {
   border-left: 2px solid var(--green);
+  color: var(--green);
 }
 .tab:hover {
   background-color: var(--green-tint);

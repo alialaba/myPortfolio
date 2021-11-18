@@ -175,6 +175,7 @@
 
   .tab {
     /* position: relative; */
+    text-align: center;
     border-left: 0;
     border-bottom: 2px solid var(--slate);
     height: 0;
