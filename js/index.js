@@ -33,3 +33,57 @@ window.addEventListener("load", (event) => {
     document.getElementById("tools-2").style.display = "none";
     document.getElementById("tools-3").style.display = "none";
 })
+
+//Elements
+const devGreeting = document.getElementById("dev-greet");
+
+//time
+
+const now = new Date();
+const currentHours = now.getHours();
+// const currentMinutes = now.getMinutes();
+// const currentSeconds = now.getSeconds()
+
+// const displayGreeting = () => {
+//     if (currentHours >= 0 && currentHours <= 11) {
+//         devGreeting.textContent = "Good Morning ☀️";
+//     } else if (currentHours >= 12 && currentHours < 16) {
+//         devGreeting.textContent = "Good Afternoon  ";
+//     } else if (currentHours > 16 && currentHours < 21) {
+//         devGreeting.textContent = "Good Evening ✨️";
+//     } else {
+//         devGreeting.textContent = "Good Night";
+//     }
+// }
+
+// window.addEventListener("onload", () => {
+//     displayGreeting()
+// })
+// setTimeout(function () { displayGreeting(); }, 1000);
+
+/*********STICY NAVIGATION *************/
+const sectionHeroEl = document.querySelector(".hero-section");
+
+const obs = new IntersectionObserver(
+    function (entries) {
+        const ent = entries[0];
+        console.log(ent);
+        if (ent.isIntersecting === false) {
+            document.body.classList.add("sticky");
+        }
+        if (ent.isIntersecting === true) {
+            document.body.classList.remove("sticky");
+        }
+
+    },
+    {
+        //in the viewport
+        root: null,
+        threshold: 0,
+        rootMargin: "-80px"
+    }
+);
+obs.observe(sectionHeroEl);
+
+
+
