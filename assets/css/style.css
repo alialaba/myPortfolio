@@ -21,10 +21,10 @@
   height: 3.2rem;
 }
 .welcome {
-  color: #fff;
-  font-weight: 700;
+  color: var(--lightest-slate);
+  font-weight: 500;
   margin-left: 10px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 .nav-list {
   list-style: none;
@@ -35,7 +35,7 @@
 .nav-link:link,
 .nav-link:visited {
   display: inline-block;
-  color: #fff;
+  color: var(--lightest-slate);
   font-size: 1.7rem;
   text-decoration: none;
   font-weight: 500;
@@ -43,12 +43,12 @@
 }
 .nav-link:hover,
 .nav-link:active {
-  color: var(--green);
+  color: var(--br-dark-green);
 }
 
 .nav-link.nav-link__cta {
-  padding: 1rem 2rem;
-  color: var(--green);
+  padding: 1.1rem 2.2rem;
+  color: var(--br-dark-green);
 }
 .btn-nav-toggle {
   display: none;
@@ -60,7 +60,7 @@
 .icon-nav-toggle {
   width: 4.8rem;
   height: 4.8rem;
-  color: var(--green);
+  color: var(--br-dark-green);
 }
 .list__link--icon {
   /* width: 50%; */
@@ -99,19 +99,20 @@
   line-height: 1.4;
 }
 .hero__content--title {
-  color: var(--green);
+  color: var(--br-dark-green);
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 }
 .hero__content--name {
-  font-size: 7rem;
-  font-weight: 600;
+  font-size: 6.5rem;
+  font-weight: 700;
   color: var(--lightest-slate);
 }
 .hero__content--subtitle {
-  font-size: 7rem;
-  font-weight: 600;
+  font-size: 6.5rem;
+  font-weight: 700;
   letter-spacing: -1px;
   color: var(--light-slate);
   margin-bottom: 3rem;
@@ -121,7 +122,7 @@
   font-size: 1.6rem;
   color: var(--light-slate);
   line-height: 1.5;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .hero--btn {
   font-size: 1.6rem;
@@ -183,8 +184,8 @@
   gap: 3rem;
 }
 .active.tab {
-  border-left: 2px solid var(--green);
-  color: var(--green);
+  border-left: 2px solid var(--br-dark-green);
+  color: var(--br-dark-green);
 }
 .tab:hover {
   background-color: var(--green-tint);

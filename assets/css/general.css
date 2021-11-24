@@ -33,6 +33,7 @@ body {
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #bdfff0;
+  --br-dark-green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
@@ -90,8 +91,8 @@ a {
   gap: 1rem;
 }
 .list__link:hover,
-.list__link:focus {
-  color: var(--green);
+.list__link:active {
+  color: var(--br-dark-green);
 }
 /* .overlay {
   position: absolute;
@@ -128,10 +129,12 @@ a {
 .btn:visited {
   display: inline-block;
   background: transparent;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 1px solid var(--br-dark-green);
+  color: var(--br-dark-green);
   border-radius: 4px;
   transition: all 0.3s;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 .hero--btn:hover,
 .hero--btn:active {
@@ -163,7 +166,7 @@ a {
 } */
 .tool__item::marker {
   content: "▶";
-  color: var(--green);
+  color: var(--br-dark-green);
 }
 
 /* 
