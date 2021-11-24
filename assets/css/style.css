@@ -24,7 +24,7 @@
   color: #fff;
   font-weight: 700;
   margin-left: 10px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .nav-list {
   list-style: none;
@@ -36,23 +36,19 @@
 .nav-link:visited {
   display: inline-block;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s;
 }
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:active {
   color: var(--green);
 }
 
-.nav-link.nav-link__cta:visited,
-.nav-link.nav-link__cta:link {
+.nav-link.nav-link__cta {
   padding: 1rem 2rem;
-  background: transparent;
-  border: 1px solid var(--green);
   color: var(--green);
-  border-radius: 4px;
 }
 .btn-nav-toggle {
   display: none;
@@ -97,10 +93,10 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
-  padding: 2.5rem 0 5rem 0;
+  /* padding: 2.5rem 0 5rem 0; */
 }
 .hero__content {
-  line-height: 1.1;
+  line-height: 1.4;
 }
 .hero__content--title {
   color: var(--green);
@@ -118,22 +114,18 @@
   font-weight: 600;
   letter-spacing: -1px;
   color: var(--light-slate);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .hero__content--describe {
   width: 45%;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: var(--light-slate);
   line-height: 1.5;
   margin-bottom: 5rem;
 }
-.hero__content--btn {
-  text-decoration: none;
-  color: var(--green);
-  letter-spacing: 1px;
+.hero--btn {
   font-size: 1.6rem;
-  border: 1px solid var(--green);
-  padding: 1.2rem 4.8rem;
+  padding: 1.6rem 5.8rem;
 }
 .about-section {
   background-color: var(--navy);

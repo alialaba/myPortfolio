@@ -47,14 +47,14 @@ body {
     --tab-height: 42px;
     --tab-width: 120px; 
     
-    --fz-xxs: 12px;
-  --fz-xs: 13px;
-  --fz-sm: 14px;
-  --fz-md: 16px;
-  --fz-lg: 18px;
-  --fz-xl: 20px;
-  --fz-xxl: 22px;
-  --fz-heading: 32px;
+    --fz-xxs: 0.75rem;
+  --fz-xs: 0.813rem;
+  --fz-sm: 0.875rem;
+  --fz-md: 1rem;
+  --fz-lg: 1.125rem;
+  --fz-xl: 1.25rem;
+  --fz-xxl: 1.375rem;
+  --fz-heading: 2rem;
     */
 }
 h1,
@@ -123,6 +123,24 @@ a {
   top: 50%;
   right: 50px;
 } */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.hero--btn:hover,
+.hero--btn:active {
+  background: var(--green-tint);
+}
+.nav-link__cta:hover,
+.nav-link__cta:active {
+  background: var(--green-tint);
+}
 
 /* triangular list bullet */
 .list {

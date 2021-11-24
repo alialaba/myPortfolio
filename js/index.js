@@ -1,3 +1,5 @@
+
+"use strict"
 //NAVBAR TOGGLING
 
 const btnNavEl = document.querySelector(".btn-nav-toggle");
@@ -6,7 +8,8 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener('click', () => {
     // e.preventDefault()
     headerEl.classList.toggle('nav-open')
-    console.log()
+
+
 })
 
 //TABS
@@ -41,25 +44,29 @@ const devGreeting = document.getElementById("dev-greet");
 
 const now = new Date();
 const currentHours = now.getHours();
-// const currentMinutes = now.getMinutes();
-// const currentSeconds = now.getSeconds()
+const currentMinutes = now.getMinutes();
+const currentSeconds = now.getSeconds()
 
-// const displayGreeting = () => {
-//     if (currentHours >= 0 && currentHours <= 11) {
-//         devGreeting.textContent = "Good Morning ☀️";
-//     } else if (currentHours >= 12 && currentHours < 16) {
-//         devGreeting.textContent = "Good Afternoon  ";
-//     } else if (currentHours > 16 && currentHours < 21) {
-//         devGreeting.textContent = "Good Evening ✨️";
-//     } else {
-//         devGreeting.textContent = "Good Night";
-//     }
-// }
+const displayGreeting = () => {
+    if (currentHours >= 0 && currentHours <= 11) {
+        devGreeting.textContent = "Good Morning ☀️";
+    } else if (currentHours >= 12 && currentHours < 16) {
+        devGreeting.textContent = "Good Afternoon ✌️ ";
+    } else if (currentHours > 16 && currentHours < 21) {
+        devGreeting.textContent = "Good Evening ✨️";
+    } else {
+        devGreeting.textContent = "Good Night";
+    }
+}
 
-// window.addEventListener("onload", () => {
-//     displayGreeting()
-// })
-// setTimeout(function () { displayGreeting(); }, 1000);
+window.addEventListener("onload", () => {
+    // if (onload) {
+    //     displayGreeting()
+    // } else {
+    //     devGreeting.textContent = "Ali.dev";
+    // }
+})
+setInterval(function () { displayGreeting(); }, 1000);
 
 /*********STICY NAVIGATION *************/
 const sectionHeroEl = document.querySelector(".hero-section");
