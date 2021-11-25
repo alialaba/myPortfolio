@@ -128,27 +128,47 @@
   font-size: 1.6rem;
   padding: 1.6rem 5.8rem;
 }
+
+/**About Section*/
 .about-section {
   background-color: var(--navy);
 }
 .about {
   display: grid;
-  grid-template-columns: 60fr 35fr;
+  grid-template-columns: 62fr 35fr;
   gap: 5rem;
-  grid-row: 5rem;
   align-items: center;
 }
 .about__describe {
-  font-size: 1.8rem;
-  line-height: 1.4;
-  color: var(--light-slate);
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: var(--slate);
+  font-weight: 500;
+}
+.about-section .techie__title {
+  color: var(--slate);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.about-section .techie__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 0.6;
+}
+.about-section .techie__item {
+  font-size: 1.4rem;
 }
 
 .about__img {
   /* position: relative;
   width: 90%; */
+  margin-top: 5rem;
 }
 .about__img--mine {
+  width: 70%;
 }
 
 .about__img::after {
@@ -157,6 +177,8 @@
 .about__img:hover .about__img--mine {
   opacity: 0.3;
 }
+
+/*Work section*/
 .work-section {
   background-color: var(--navy);
 }
@@ -195,8 +217,4 @@
 .tab-content__subtitle {
   padding: 0 1.5rem;
   margin: 0.95rem 0;
-}
-.techie__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
