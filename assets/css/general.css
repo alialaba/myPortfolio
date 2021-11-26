@@ -118,7 +118,7 @@ a {
   margin-bottom: 3rem;
   /* position: relative; */
 }
-.subheading::before {
+/* .subheading::before {
   position: absolute;
   content: "";
   width: 30%;
@@ -126,7 +126,7 @@ a {
   height: 1px;
   bottom: -90px;
   left: 23%;
-}
+} */
 .btn,
 .btn:link,
 .btn:visited {
@@ -172,6 +172,7 @@ a {
 .tool__item::marker {
   content: "▶";
   color: var(--br-dark-green);
+  font-size: 0.9rem;
 }
 
 /* 
