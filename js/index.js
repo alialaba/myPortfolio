@@ -44,8 +44,8 @@ const devGreeting = document.getElementById("dev-greet");
 
 const now = new Date();
 const currentHours = now.getHours();
-const currentMinutes = now.getMinutes();
-const currentSeconds = now.getSeconds()
+const userLocale = navigator.language;
+new Intl.DateTimeFormat(userLocale).format(now)
 
 const displayGreeting = () => {
     if (currentHours >= 0 && currentHours <= 11) {
