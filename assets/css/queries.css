@@ -203,6 +203,8 @@
     text-align: center;
     border-left: 0;
     border-bottom: 2px solid var(--slate);
+    font-size: 1.5rem;
+    /* margin-left: 2rem; */
     /* height: 0; */
   }
   .tab.active {
