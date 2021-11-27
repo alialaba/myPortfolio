@@ -35,6 +35,9 @@ window.addEventListener("load", (event) => {
     document.getElementById("tools-1").style.display = "block";
     document.getElementById("tools-2").style.display = "none";
     document.getElementById("tools-3").style.display = "none";
+    document.getElementById("tools-4").style.display = "none";
+    document.getElementById("tools-5").style.display = "none";
+    document.getElementById("tools-6").style.display = "none";
 })
 
 //Elements
@@ -74,7 +77,6 @@ const sectionHeroEl = document.querySelector(".hero-section");
 const obs = new IntersectionObserver(
     function (entries) {
         const ent = entries[0];
-        console.log(ent);
         if (ent.isIntersecting === false) {
             document.body.classList.add("sticky");
         }

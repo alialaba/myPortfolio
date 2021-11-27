@@ -168,6 +168,14 @@
   /* position: relative;
   width: 90%; */
   margin-top: 5rem;
+  /* position: relative; */
+  /* width: 70%; */
+  /* min-height: 30em;
+  background: rgba(0, 0, 0, 0.03) url(/assets/mine.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  /* background: var(--green-tint); */
 }
 .about__img--mine {
   width: 70%;
