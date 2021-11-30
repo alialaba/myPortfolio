@@ -166,6 +166,10 @@
   .tab-content .tool__item {
     font-size: 1.8rem;
   }
+  /* Project */
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */

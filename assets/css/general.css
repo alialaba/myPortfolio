@@ -219,6 +219,21 @@ a {
   margin: 0 auto;
   background-color: var(--green);
 } */
+
+.heading-primary {
+  color: var(--br-dark-green);
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.heading-secondary {
+  color: var(--lightest-slate);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
 .grid {
   display: grid;
   column-gap: 6.4;
