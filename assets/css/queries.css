@@ -170,6 +170,19 @@
   .grid--2-cols {
     grid-template-columns: 1fr;
   }
+  .project-content .inner {
+    /* position: absolute;
+    top: 20%; */
+    transform: translateY(100px);
+
+    /* background: red; */
+  }
+  .project-featured .description {
+    width: 100%;
+    background: var(--green-tint);
+    transform: translateY(50px);
+    /* top: 20%; */
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
