@@ -261,9 +261,10 @@
   background: var(--navy);
   padding: 4.8rem 0 9.6rem 0;
 }
-.project-content .inner {
-  /* display: block; */
+.project-image {
+  opacity: 0.2;
 }
+
 .project-featured {
   position: relative;
 }
@@ -271,6 +272,7 @@
 .project-featured .featured__item {
   margin-bottom: 10rem;
 }
+
 .project-featured .description {
   background: var(--navy);
   width: 60%;
