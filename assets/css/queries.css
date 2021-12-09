@@ -174,8 +174,10 @@
   .project-featured .description {
     width: 100%;
     background: none;
-    transform: translateY(50px);
-    font-size: 1.4rem;
+    transform: translateY(40px);
+    font-size: 1.7rem;
+    line-height: 1.6;
+    padding: 0 2.5rem 0 0;
 
     /* bottom: 10%; */
   }
@@ -195,6 +197,10 @@
   .project-image img {
     height: 55vh;
     width: 100%;
+    opacity: 0.1;
+  }
+  .project-image img:hover {
+    opacity: 0.1;
   }
   .grid {
     /* column-gap: 6.4rem;

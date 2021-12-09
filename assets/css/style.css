@@ -261,8 +261,13 @@
   background: var(--navy);
   padding: 4.8rem 0 9.6rem 0;
 }
-.project-image {
-  opacity: 0.2;
+.project-image img {
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.project-image img:hover {
+  opacity: 1;
 }
 
 .project-featured {
@@ -274,16 +279,18 @@
 }
 
 .project-featured .description {
-  background: var(--navy);
+  background: var(--light-navy);
   width: 60%;
   height: 150px;
   padding: 2rem;
   border-radius: 4px;
-  line-height: 1.4;
-  font-size: 1.4rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: var(--light-slate);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   position: absolute;
+  z-index: 1;
   /* display: none; */
   /* bottom: 20%; */
   /* margin-bottom: 5rem; */
