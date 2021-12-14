@@ -148,7 +148,8 @@ a {
 .btn:visited {
   display: inline-block;
   background: transparent;
-  border: 1px solid var(--br-dark-green);
+  /* border: 1px solid var(--br-dark-green); */
+  background: linear-gradient(to right, #55ddff, #c058f3);
   color: var(--br-dark-green);
   border-radius: 4px;
   transition: all 0.3s;

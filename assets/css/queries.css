@@ -59,6 +59,15 @@
   .tab-content__subtitle {
     font-size: 1.5rem;
   }
+
+  /* Message Section */
+  .message-title {
+    font-size: 3.5rem;
+  }
+  .message-description {
+    width: 90%;
+    font-size: 1.7rem;
+  }
 }
 /**************************/
 /* BELOW 758px (Smaller tablets) */
@@ -202,6 +211,8 @@
   .project-image img:hover {
     opacity: 0.1;
   }
+
+  /* general */
   .grid {
     /* column-gap: 6.4rem;
   row-gap: 9.6rem; */

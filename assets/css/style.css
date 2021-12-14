@@ -315,3 +315,32 @@
   font-size: 2.5rem;
   color: var(--lightest-slate);
 }
+
+/* Message Section */
+.message-section {
+  background-color: var(--navy);
+  padding: 4.8rem 0 9.6rem 0;
+}
+.message {
+  text-align: center;
+  padding: 1rem;
+}
+.message-title {
+  color: var(--light-slate);
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.message-description {
+  color: var(--slate);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 60%;
+  line-height: 1.4;
+}
+.message-btn {
+  font-size: 1.6rem;
+  padding: 2.2rem 4.4rem;
+  margin-top: 3rem;
+}
