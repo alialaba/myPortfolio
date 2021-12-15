@@ -341,7 +341,7 @@
 }
 .message-btn {
   font-size: 1.6rem;
-  padding: 2.2rem 4rem;
+  padding: 2rem 3rem;
   margin-top: 3rem;
 }
 /* footer section */
@@ -351,6 +351,7 @@
   position: relative;
 }
 .footer-content {
+  color: var(--slate);
 }
 .footer-content .social {
   position: fixed;
@@ -372,4 +373,11 @@
   width: 1px;
   height: 100%;
   background-color: var(--slate);
+}
+.footer-content .comment {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
 }

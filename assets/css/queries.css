@@ -283,7 +283,7 @@
   }
   /* message section */
   .message-description {
-    width: 90%;
+    width: 100%;
   }
   .grid {
     column-gap: 0rem;
@@ -294,5 +294,22 @@
   }
   .heading-secondary {
     margin-bottom: 40px;
+  }
+  /* footer section */
+  .footer-content .social {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  .footer-content .social::after {
+    display: none;
+  }
+  .footer-content .comment {
+    font-size: 1.7rem;
   }
 }
