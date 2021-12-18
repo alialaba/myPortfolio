@@ -169,7 +169,8 @@
     font-size: 1.8rem;
   }
   /* Project */
-  .grid--2-cols {
+  .grid--2-cols,
+  .grid--3-cols {
     grid-template-columns: 1fr;
   }
 

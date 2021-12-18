@@ -381,3 +381,32 @@
   text-align: center;
   line-height: 1.7;
 }
+/* subproject section */
+.subproject-section {
+  background-color: var(--navy);
+  padding: 4.8rem 0 9.6rem 0;
+}
+.subproject-card {
+  background-color: var(--light-navy);
+  padding: 2rem;
+}
+.subproject__title {
+  color: var(--light-slate);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.subproject__desc {
+  color: var(--slate);
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+.subproject-card:hover {
+  /* color: var(--br-dark-green); */
+  transform: translateY(-5px);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.subproject-card:hover > .subproject__title:hover {
+  color: var(--br-dark-green);
+}
