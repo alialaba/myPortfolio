@@ -357,8 +357,13 @@
 }
 .social-link {
   color: var(--slate);
-  /* transition: transform 0.5s; */
+  /* transition: 0.5s ease-in; */
 }
+.social-link:hover {
+  color: var(--br-dark-green);
+  /* transform: translateY(15px); */
+}
+
 .footer-content .social::after {
   position: absolute;
   left: 10px;
@@ -376,10 +381,6 @@
   margin: 0 auto;
   text-align: center;
   line-height: 1.7;
-}
-.social-link:hover {
-  color: var(--br-dark-green);
-  transform: translateY(-5px);
 }
 /* subproject section */
 .subproject-section {
