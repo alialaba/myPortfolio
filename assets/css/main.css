@@ -1,0 +1,35 @@
+/*****************************/
+/* HEADER STYLES */
+/*****************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 5em ;
+    position: relative;
+    
+    
+}
+.header__actions-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.header__nav{
+    display: none;
+    position: absolute;
+    right: 20%;
+    transform: translateY(50px);
+}
+.header__menu-chat{
+    background: var(--color-gray);
+    padding: 1em .5em;
+}
+.header__menu-button{
+    background: var(--color-primary);
+    padding: 1em .5em;
+}
+.header__nav--open{
+    display: block;
+
+}

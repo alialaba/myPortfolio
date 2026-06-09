@@ -2,6 +2,19 @@
 "use strict"
 //NAVBAR TOGGLING
 
+const menuButton = document.querySelector("#menu-btn");
+const mainNav = document.querySelector("#main-nav");
+
+menuButton.addEventListener("click", ()=>{
+   const isExpanded = menuButton.getAttribute("aria-expanded" === true);
+   menuButton.setAttribute("aria-expanded", !isExpanded);
+   mainNav.classList.toggle("header__nav--open")
+})
+
+
+
+/*
+
 const btnNavEl = document.querySelector(".btn-nav-toggle");
 const headerEl = document.querySelector(".header");
 
