@@ -1,52 +1,60 @@
-# [Project Name] — Design & Interaction Specification
+# [Portofolio ] — Design & Interaction Specification
 
 ## Design System
 
 | Token        | Value           |
 |--------------|-----------------|
-| Primary      | `#27b7a5`       |
-| Background   | `#0a0a0a`       |
-| Text         | `#f5f5f5`       |
-| Font Display | `"PP Neue Montreal", sans-serif` |
-| Font Body    | `"Inter", sans-serif` |
+| Primary      | `#0C1016`       |
+| Background   | `#f0f6f8`       |
+| Secondary    | `#d9e0e3`       |
+| Text Gray    | `#a5abad`       |
+| Font         | `"Inter", sans-serif` |
 | Base Radius  | `12px`          |
-| Transition   | `0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
+| Transition   | `cubic-bezier(0.22, 0.68, 0, 1)` |
+| Transition II| `cubic-bezier(0.22, 0.68, 0, 1.5)`          |
 
 ---
 
-## Section: [Section Name e.g. Header / Nav]
+## Section: [Header / Nav]
 
 ### Layout
-- Height: `80px`
-- Padding: `0 48px`
-- Position: `fixed`, `top: 0`, `z-index: 100`
-- Background: `transparent` → `rgba(0,0,0,0.8)` on scroll
+- Padding: `2.5rem 3rem`(Desktop) `1.5rem 1rem` (Mobile)
+- Position: `fixed`, `top: 0`, `z-index: 1997`
+- Background: `transparent` → `transparent` on scroll
 
 ### Elements
 | Element     | Property      | Value     |
 |-------------|---------------|-----------|
-| Logo        | font-size     | `18px`    |
-| Logo        | font-weight   | `700`     |
-| Nav links   | font-size     | `14px`    |
+| Logo        | Width         | `5rem` on Mob & `9rem` on Desktop    |
+| Nav links   | font-size     | `1.8rem` on Mob  `3rem` on Desktop    |
 | Nav links   | letter-spacing| `0.08em`  |
-| Menu button | width/height  | `44px`    |
 
 ### States
 
 #### Default State
-- Nav links: `color: #f5f5f5`, `opacity: 0.7`
+- Nav links: `color: #1e242c`, `opacity: 0.7`
 - Menu icon: static, no transform
 
 #### Hover State
-- Nav links: `opacity: 1`, underline slides in from left
+- Header Chat Link: `transform: scale(1.1)`, icon translate on X Axis from -250% to 250%
 ```css
   /* Implementation */
-  .nav-link::after {
-    content: '';
-    width: 0;
-    transition: width 0.3s ease;
-  }
-  .nav-link:hover::after { width: 100%; }
+  .chat-icon .icon-hover{
+    position: absolute;
+    transform: translateX(-250%);
+}
+.header__chat:hover .icon-base{
+    transform: translateX(250%);
+}
+.header__chat:hover .icon-hover{
+    transform: translateX(0);
+}
+```
+- Menu Button:`transform: scale(1.1)`, rotates dot svg by `90deg`
+```css
+.header__menu-dot svg {transition: transform 500ms var(--ease-cubic-bounce);}
+  .header__menu:hover .header__menu-dot svg{transform: rotate(90deg);}
+  
 ```
 - Menu icon: rotates `90deg`
 ```css
@@ -54,26 +62,26 @@
 ```
 
 #### Active / Pressed State
-- Menu button: scales down slightly to give tactile feel
+- Header Chat Link: Slowly Pop Up the Contact page Section 
 ```css
-  .menu-btn:active { transform: scale(0.92); }
 ```
+- Menu Button: Menu Text fade Up and Displays `Close` Text and open Menu 
 
 #### Transition State (Menu Open)
 - Trigger: click `.menu-btn`
-- Overlay slides in from top or fades in with `clip-path` reveal
-- Nav links stagger in with `animation-delay: 0.1s` per item
-- Icon morphs from hamburger → X using CSS transforms
+- A box includes nav links bounce in from left Showing the Nav Links, So user can click
+
 ```js
   // Implementation
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('is-open');
-    menuBtn.classList.toggle('is-active');
-  });
+ menuButton.addEventListener("click", ()=>{
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen))
+    mainNav.setAttribute("aria-hidden", String(isOpen))
+    mainNav.classList.toggle("is-open")
+    
+})
 ```
 ```css
-  .nav { clip-path: inset(0 0 100% 0); transition: clip-path 0.6s cubic-bezier(...); }
-  .nav.is-open { clip-path: inset(0 0 0% 0); }
 ```
 
 #### Focus State (Accessibility)

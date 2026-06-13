@@ -2,14 +2,30 @@
 "use strict"
 //NAVBAR TOGGLING
 
-const menuButton = document.querySelector("#menu-btn");
+const menuButton = document.querySelector("#menu-toggle");
 const mainNav = document.querySelector("#main-nav");
+const body = document.querySelector("body")
 
 menuButton.addEventListener("click", ()=>{
-   const isExpanded = menuButton.getAttribute("aria-expanded" === true);
-   menuButton.setAttribute("aria-expanded", !isExpanded);
-   mainNav.classList.toggle("header__nav--open")
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen))
+    mainNav.setAttribute("aria-hidden", String(isOpen))
+    mainNav.classList.toggle("is-open")
+    
 })
+
+
+
+  document.addEventListener("click", (e)=>{
+     if(!mainNav.contains(e.target) && !menuButton.contains(e.target)) {
+       const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", "false")
+    mainNav.setAttribute("aria-hidden", String(isOpen))
+    mainNav.classList.remove("is-open")
+     }
+    
+  })
+
 
 
 

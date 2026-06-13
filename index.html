@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,49 +12,122 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/76ab3948f6.js" crossorigin="anonymous"></script>
     <!-- Fonts CSS -->
-    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/general.css">
     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- <link rel="stylesheet" href="./assets/css/queries.css"> -->
     <!--End custom CSS -->
 
     <title>Alialaba Portfolio</title>
 </head>
+
 <body>
 
     <header class="header">
-        <a href="" class="header__logo">
-            <span>LogoSite</span>     
-        </a>
-        <div class="header__actions-wrapper">
-            <a href="" class="header__menu-chat">
-                <span>Chat With Me</span>
-                <span>Icon</span>
+        <div class="header__left">
+            <a href="" class="header__logo">
+                <span>LogoSite</span>
             </a>
-            <button class="header__menu-button" id="menu-btn"  aria-expanded="false" aria-controls="main-nav">
-                <span>MENU</span>
-                <span>Icon</span>
-            </button>
         </div>
-        <nav class="header__nav" id="main-nav" aria-label="Main Navigation">
-            <ul>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Services</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Work</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Experience</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        
-        
+        <div class="header__right">
+            <div class="header__controls">
+
+                <a href="" class="header__chat">
+                    <span class="chat-label">Chat With Alialaba</span>
+                    <span class="chat-icon">
+                        <span class="icon-base">
+                            <!-- <ion-icon name="chatbox-outline" class="move-out"></ion-icon> -->
+                            <svg viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 3.26215C1 2.33911 1.79594 1.59084 2.77778 1.59084L15.2222 1.59082C16.2041 1.59082 17 2.33909 17 3.26213V11.6485C17 12.5716 16.2041 13.3198 15.2222 13.3199L11.9989 13.3199C11.7918 13.3199 11.5912 13.3878 11.4318 13.512L8.9962 15.409L6.59291 13.5151C6.43287 13.389 6.23071 13.3199 6.02188 13.3199H2.77778C1.79594 13.3199 1 12.5716 1 11.6486L1 3.26215Z"
+                                    stroke="currentColor" stroke-width="1.77778" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="icon-hover">
+                            <!-- <ion-icon name="chatbox-outline" class="move-in"></ion-icon> -->
+                            <svg viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 3.26215C1 2.33911 1.79594 1.59084 2.77778 1.59084L15.2222 1.59082C16.2041 1.59082 17 2.33909 17 3.26213V11.6485C17 12.5716 16.2041 13.3198 15.2222 13.3199L11.9989 13.3199C11.7918 13.3199 11.5912 13.3878 11.4318 13.512L8.9962 15.409L6.59291 13.5151C6.43287 13.389 6.23071 13.3199 6.02188 13.3199H2.77778C1.79594 13.3199 1 12.5716 1 11.6486L1 3.26215Z"
+                                    stroke="currentColor" stroke-width="1.77778" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </span>
+                </a>
+                <button class="header__menu" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <div class="header__menu-label">
+                        <span class="text-wrapper">
+                            <span class="label-menu">MENU</span>
+                            <span class="label-close">Close</span>
+                        </span>
+
+                    </div>
+                    <span class="header__menu-dot">
+                        <svg viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.4517" cy="3.41264" r="2.54545" fill="currentColor" />
+                            <circle cx="2.54545" cy="3.41264" r="2.54545" fill="currentColor" />
+                        </svg>
+                    </span>
+
+                </button>
+
+            </div>
+
+            <nav class="header__nav" id="main-nav" aria-hidden="true" aria-label="Main Navigation">
+                <div class="header__nav-wrapper">
+                    <a href="#home" class="header__nav-link">
+                        <div class="nav-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+
+                        <span>Services</span>
+                    </a>
+                    <a href="#" class="header__nav-link">
+                        <span class="nav-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <span>Work</span>
+                    </a>
+                    <a href="#" class="header__nav-link">
+                        <span class="nav-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <span>Experience</span>
+                    </a>
+                    <a href="#" class="header__nav-link">
+                        <span class="nav-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
-   <!-- 
-    
-   
-   -->
-    
+   <section>
+     <div class="container">
+    <div class="hero">
+        <div class="hero__scroll">
+            <p class="hero__scroll-text">Scroll Down</p>
+        </div>
+            <div class="hero__content">
+            <p class="hero__content-text"><span>Hello, It's Aliyu AbdulGaniy, Your Trusted Web Design partner 
+                </span><span>crafting & building Stuffs for the web.</span></p>
+            <h1 class="hero__content-heading ">UI/UX Interaction</h1>
+
+        </div>
+        </div>
+    </div>
+   </section>
+
     <script src="/js/index.js"></script>
 </body>
+
 </html>
