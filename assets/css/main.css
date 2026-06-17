@@ -149,6 +149,7 @@
     transition: transform 500ms var(--ease-cubic-bounce);
 }
 .header__menu:hover .header__menu-dot svg{transform: rotate(90deg);}
+/* .header__menu.is-open .header__menu-dot svg{transform: rotate(90deg);} */
 .header__nav{
     position: fixed;
     top: 5rem;
@@ -257,6 +258,84 @@ margin-bottom: 1em;
     color: var(--color-dark);
 }
 
+/* WORK */
+.work__item{
+    height: 450px;
+    background-color: var(--color-dark);
+    padding: 1.5em;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    overflow: hidden;
+}
+.work__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.work__content{
+     display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+.work__name{
+    color: var(--color-white-bg);
+    font-size: 1.4rem;
+}
+.work__description{
+    color: var(--color-gray);
+     font-size: 1.1rem;
+     width: min(450px, 100%);
+}
+.work__action{
+     width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.work__action:hover{
+    cursor: pointer;
+   background-color: var(--color-dark-accent);
+    color: var(--color-dark);
+    border-radius: 50%;
+    
+}
+
+ .work__icon{
+    color: var(--color-gray);
+    font-size: 1.4rem;
+}
+.work__visual{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    margin: 0 0 -1.5em 0; 
+}
+.work__mobile-view img, .work__desktop-view img{
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.work__mobile-view{
+    /* transform: skewX(3deg); */
+    /* width: min(40%, 100%); */
+    display: none;
+    transform: translateY(10px);
+    height: 600px;
+}
+.work__desktop-view{
+    /* transform: translateX(3px); */
+    /* width: min(60%, 100%); */
+    width: 100%;
+    height: 600px;
+}
+
  @media (min-width: 1024px){
     .header{
         padding: 2.5rem 3rem;
@@ -294,4 +373,32 @@ margin-bottom: 1em;
       .hero__scroll{
         display: block;
       }
+      /* WORK */
+      
+      .work__item{
+        padding: 3em;
+        height: 450px;
+        gap: 2em;
+      }
+      .work__visual{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    margin: 0 0 -3em 0; 
+}
+.work__name{
+    font-size: 2rem;
+}
+.work__icon{
+    font-size: 2rem;
+}
+.work__mobile-view{
+        display: block;
+        width: 40%;
+      }
+      .work__desktop-view{
+        width: 60%;
+      }
+
+
  }
