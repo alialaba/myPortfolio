@@ -33,11 +33,16 @@ body {
   /* Only works if there is nothing absolutely positioned in relation to body */
   /* overflow-x: hidden; */
 }
-h1,
 h2 {
-  /* margin-top: 2rem; */
-}
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--color-gray);
 
+}
+section{
+  margin-bottom: 5em;
+}
 /* Scrollbar style */
 html::-webkit-scrollbar {
   /* height: 2px; */
@@ -72,38 +77,6 @@ button{
   width: min(1400px, 90%);
   margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -293,4 +266,3 @@ button{
 .project-icon:hover {
   color: var(--br-dark-green);
 }
-*/

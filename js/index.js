@@ -4,7 +4,29 @@
 
 const menuButton = document.querySelector("#menu-toggle");
 const mainNav = document.querySelector("#main-nav");
-const body = document.querySelector("body")
+const body = document.querySelector("body");
+const heroSection = document.querySelector("#hero-section");
+const headerLogo = document.querySelector("#header__logo");
+
+
+
+
+
+
+const observer = new IntersectionObserver((entries)=>{
+    // console.log(entries[0])
+    headerLogo.classList.toggle("logo-hidden", !entries[0].isIntersecting);
+
+},{
+    threshold: 0,
+    rootMargin: "0px 0px 100% 0px"
+
+})
+
+observer.observe(heroSection)
+
+
+// console.log(workViusals)
 
 menuButton.addEventListener("click", ()=>{
     const isOpen = menuButton.getAttribute("aria-expanded") === "true";
